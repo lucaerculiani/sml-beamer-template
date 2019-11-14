@@ -16,6 +16,8 @@
 \usepackage{listings}  % Code listings
 \frenchspacing
 \begin{document}
+
+
   \frame{\maketitle}
 
   \AtBeginSection[]{% Print an outline at the beginning of sections
@@ -70,12 +72,33 @@
 
       \begin{block}{A plain block}
         This is a plain block containing some \alert{highlighted text}.
+	      \begin{itemize}
+		      \item this is an item
+	      \end{itemize}
+	      \begin{enumerate}
+		      \item this is an enum
+	      \end{enumerate}
       \end{block}
+    \end{frame}
+
+    \begin{frame}[label=alertblock]{Text blocks}
       \begin{exampleblock}{An example block}
         This is an example block containing some \alert{highlighted text}.
+	      \begin{itemize}
+		      \item this is an item
+	      \end{itemize}
+	      \begin{enumerate}
+		      \item this is an enum
+	      \end{enumerate}
       \end{exampleblock}
       \begin{alertblock}{An alert block}
         This is an alert block containing some \alert{highlighted text}.
+	      \begin{itemize}
+		      \item this is an item
+	      \end{itemize}
+	      \begin{enumerate}
+		      \item this is an enum
+	      \end{enumerate}
       \end{alertblock}
     \end{frame}
 
@@ -312,6 +335,7 @@
     \againframe{lists}
     \subsection{Structuring Elements}
     \againframe{simmonshall}
+    \againframe{alertblock}
     \againframe{proof}
     \subsection{Numerals and Mathematics}
     \againframe{math}
